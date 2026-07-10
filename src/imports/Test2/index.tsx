@@ -7,6 +7,19 @@ import imgRectangle12 from "./a118b4d8010f502c19b42ec411507f032f86a7b0.png";
 import imgRectangle13 from "./b585cf7b17856716cb2cb951ff250787f0ad139b.png";
 import imgFullHouse from "./1cad5618ff1fc00e3465b3ebba0e5e154bd1d3aa.png";
 import imgRectangle10 from "./adf8f90e47bc3a5dd15095d73d9c7adf00038e1f.png";
+import ac from "./images/ac maybe.jpeg";
+import ac2 from "./images/ac unit.jpeg";
+import ac3 from "./images/clean ac.jpeg";
+import ac4 from "./images/fan.jpeg";
+import ac5 from "./images/working ac man.jpeg";
+import ac6 from "./images/two ac units.jpeg";
+import steel from "./images/chairs.jpeg";
+import steel2 from "./images/even more stairs.jpeg";
+import steel3 from "./images/full stairs.jpeg";
+import steel4 from "./images/gate.jpeg";
+import steel5 from "./images/kitchen.jpeg";
+import steel6 from "./images/more stairs.jpeg";
+import steel7 from "./images/stare bars.jpeg";
 
 function Group4() {
   return (
@@ -340,10 +353,25 @@ function AirconSetup() {
   );
 }
 
+function listImages() {
+  const images = [imgRectangle12, imgRectangle13, ac, ac2, ac3, ac4, ac5, ac6, steel, steel2, steel3, steel4, steel5, steel6, steel7];
+  const imageComponents = [];
+  for (const image of images) {
+    imageComponents.push(
+      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
+          <img alt="" className="absolute h-full left-[0.09%] max-w-none top-[-0.17%] w-[125.5%]" src={image} />
+        </div>
+      </div>
+    );
+  }
+  return imageComponents;
+}
+
 function Frame() {
   return (
     <div className="absolute content-stretch flex gap-[122px] h-[346.262px] items-center left-[45px] overflow-x-auto overflow-y-clip top-[1144px] w-[1369px]">
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
+      {/* <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
           <img alt="" className="absolute h-full left-[0.09%] max-w-none top-[-0.17%] w-[125.5%]" src={imgRectangle12} />
         </div>
@@ -355,14 +383,21 @@ function Frame() {
       </div>
       <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={imgRectangle13} />
+          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={ac} />
         </div>
       </div>
       <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={imgRectangle13} />
+          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={ac2} />
         </div>
       </div>
+      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
+          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={ac3} />
+        </div>
+      </div>
+       */}
+      {listImages()}
     </div>
   );
 }
