@@ -25,6 +25,9 @@ export default function HomePage({ navigate }: Props) {
 
 function ServiceButtons() {
   const whatsappUrl = 'https://wa.me/971558159040'
+  const steelwhatsappurl = 'https://wa.me/971557429041'
+  const acwhatsappurl = 'https://wa.me/971553250470'
+  const decorwhatsappurl = 'https://wa.me/971558159040'
 
   const buttons = [
     {
@@ -33,6 +36,7 @@ function ServiceButtons() {
       width: 265,
       height: 38,
       title: 'Contact Decor team on WhatsApp',
+      url: decorwhatsappurl
     },
     {
       left: 134,
@@ -40,6 +44,7 @@ function ServiceButtons() {
       width: 361,
       height: 45,
       title: 'Contact Air Conditioning team on WhatsApp',
+      url: acwhatsappurl
     },
     {
       left: 134,
@@ -47,6 +52,7 @@ function ServiceButtons() {
       width: 265,
       height: 39,
       title: 'Contact Steel team on WhatsApp',
+      url: steelwhatsappurl
     },
     {
       left: 914,
@@ -63,7 +69,7 @@ function ServiceButtons() {
         <a
           key={button.title}
           style={{ position: 'absolute', left: button.left, top: button.top, width: button.width, height: button.height, zIndex: 50, background: 'transparent' }}
-          href={whatsappUrl}
+          href={button.url || whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-80 transition-opacity"

@@ -14,7 +14,7 @@ export default function AcPage({ navigate }: Props) {
         <SubPageNavOverlay
           navigate={navigate}
           current="ac"
-          primaryWhatsappBtn={{ left: 65, top: 1264, width: 361, height: 63 }}
+          primaryWhatsappBtn={{ left: 65, top: 1264, width: 361, height: 63, url: 'https://wa.me/971553250470' }}
           secondaryWhatsappBtn={{ left: 65, top: 1351, width: 262, height: 49 }}
         />
     </ResponsiveCanvas>

@@ -4,11 +4,14 @@ interface Props {
   navigate: (page: Page) => void
   current: Page
   // WhatsApp button dimensions vary by sub-page
-  primaryWhatsappBtn?: { left: number; top: number; width: number; height: number }
+  primaryWhatsappBtn?: {
+    url: string; left: number; top: number; width: number; height: number 
+}
   secondaryWhatsappBtn?: { left: number; top: number; width: number; height: number }
 }
 
 const WHATSAPP_URL = 'https://wa.me/971558159040'
+
 const EMAIL_URL = 'mailto:sanasteeldesign@gmail.com'
 
 export default function SubPageNavOverlay({ navigate, primaryWhatsappBtn, secondaryWhatsappBtn }: Props) {
@@ -93,7 +96,7 @@ export default function SubPageNavOverlay({ navigate, primaryWhatsappBtn, second
         <a
           className="absolute pointer-events-auto cursor-pointer hover:opacity-80 transition-opacity"
           style={{ ...primaryWhatsappBtn, background: 'transparent', zIndex: 51 }}
-          href={WHATSAPP_URL}
+          href={primaryWhatsappBtn.url || WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
           title="Contact on WhatsApp"

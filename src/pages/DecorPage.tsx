@@ -14,7 +14,7 @@ export default function DecorPage({ navigate }: Props) {
         <SubPageNavOverlay
           navigate={navigate}
           current="decor"
-          primaryWhatsappBtn={{ left: 65, top: 1264, width: 265, height: 63 }}
+          primaryWhatsappBtn={{ left: 65, top: 1264, width: 265, height: 63, url: 'https://wa.me/971558159040' }}
           secondaryWhatsappBtn={{ left: 65, top: 1351, width: 262, height: 49 }}
         />
     </ResponsiveCanvas>

@@ -14,7 +14,7 @@ export default function SteelPage({ navigate }: Props) {
         <SubPageNavOverlay
           navigate={navigate}
           current="steel"
-          primaryWhatsappBtn={{ left: 65, top: 1264, width: 265, height: 63 }}
+          primaryWhatsappBtn={{ left: 65, top: 1264, width: 265, height: 63, url: 'https://wa.me/971557429041' }}
           secondaryWhatsappBtn={{ left: 65, top: 1351, width: 262, height: 49 }}
         />
     </ResponsiveCanvas>
