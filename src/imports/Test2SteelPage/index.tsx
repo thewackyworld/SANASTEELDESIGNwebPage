@@ -4,6 +4,13 @@ import imgRectangle12 from "./a118b4d8010f502c19b42ec411507f032f86a7b0.png";
 import imgRectangle13 from "./b585cf7b17856716cb2cb951ff250787f0ad139b.png";
 import imgRectangle10 from "./adf8f90e47bc3a5dd15095d73d9c7adf00038e1f.png";
 import imgPhoto2026070121103823 from "./7ff8dfabc256e815ac27652ee18c7de86e2c2c26.png";
+import steel from "./images/chairs.jpeg";
+import steel2 from "./images/even more stairs.jpeg";
+import steel3 from "./images/full stairs.jpeg";
+import steel4 from "./images/gate.jpeg";
+import steel5 from "./images/kitchen.jpeg";
+import steel6 from "./images/more stairs.jpeg";
+import steel7 from "./images/stare bars.jpeg";
 
 function Group1() {
   return (
@@ -149,36 +156,32 @@ function BottomBar() {
   );
 }
 
+function listImages() {
+  const images = [steel, steel2, steel3, steel4, steel5, steel6, steel7, imgRectangle12, imgRectangle13];
+  const imageComponents = [];
+  for (const image of images) {
+    imageComponents.push(
+      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[fill-available]" key={image}>
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
+          <img alt="" className="absolute h-full left-[1%] max-w-none top-[0.08%] w-[100%]" src={image} />
+        </div>
+      </div>
+    );
+  }
+  return imageComponents;
+}
+
 function Frame() {
   return (
     <div className="flex-[1_0_0] gap-x-[65px] gap-y-[398px] grid grid-cols-[repeat(3,minmax(0,1fr))] grid-rows-[repeat(4,minmax(0,1fr))] min-h-px overflow-x-auto overflow-y-clip relative w-full">
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[0.09%] max-w-none top-[-0.17%] w-[125.5%]" src={imgRectangle12} />
-        </div>
-      </div>
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[420px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={imgRectangle13} />
-        </div>
-      </div>
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={imgRectangle13} />
-        </div>
-      </div>
-      <div className="h-[346px] justify-self-start relative rounded-[24px] self-start shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={imgRectangle13} />
-        </div>
-      </div>
+      {listImages()}
     </div>
   );
 }
 
 function Frame4() {
   return (
-    <div className="absolute content-stretch flex flex-col h-[1111.211px] items-center justify-center left-[42px] top-[1586px] w-[1369px]">
+    <div className="absolute content-stretch flex flex-col h-[1211.211px] items-center justify-center left-[42px] top-[1586px] w-[1369px]">
       <Frame />
     </div>
   );

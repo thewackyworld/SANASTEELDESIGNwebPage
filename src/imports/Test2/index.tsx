@@ -360,7 +360,7 @@ function listImages() {
     imageComponents.push(
       <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[0.09%] max-w-none top-[-0.17%] w-[125.5%]" src={image} />
+          <img alt="" className="absolute h-full left-[0.09%] max-w-none top-[-0.17%] w-[105.5%]" src={image} />
         </div>
       </div>
     );
@@ -371,32 +371,6 @@ function listImages() {
 function Frame() {
   return (
     <div className="absolute content-stretch flex gap-[122px] h-[346.262px] items-center left-[45px] overflow-x-auto overflow-y-clip top-[1144px] w-[1369px]">
-      {/* <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[398px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[0.09%] max-w-none top-[-0.17%] w-[125.5%]" src={imgRectangle12} />
-        </div>
-      </div>
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[420px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={imgRectangle13} />
-        </div>
-      </div>
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={ac} />
-        </div>
-      </div>
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={ac2} />
-        </div>
-      </div>
-      <div className="h-[346px] relative rounded-[24px] shadow-[7px_12px_4px_0px_rgba(0,0,0,0.25)] shrink-0 w-[390px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[24px]">
-          <img alt="" className="absolute h-full left-[-10.27%] max-w-none top-[0.08%] w-[120.69%]" src={ac3} />
-        </div>
-      </div>
-       */}
       {listImages()}
     </div>
   );
