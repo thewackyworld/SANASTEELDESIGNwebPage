@@ -1,0 +1,53 @@
+{
+  "brand": "SANA STEEL DESIGN",
+  "nav": {
+    "aboutUs": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contactUs": "Contact us",
+    "inquire": "INQUIRE"
+  },
+  "optionsTabs": { "steel": "STEEL", "decor": "DECOR", "aircon": "AIR CON" },
+  "pictures": { "title": "Pictures" },
+  "home": {
+    "features": {
+      "engineering": "ENGINEERING",
+      "steelFabrication": "STEEL FABRICATION",
+      "precisionInstallation": "PRECISION INSTALLATION",
+      "qualityAssurance": "QUALITY ASSURANCE"
+    },
+    "about": {
+      "title": "Sana Steel Design – Shaping Metal into Art",
+      "body": "At Sana Steel Design, we don't just shape metal; we transform it into works of art that combine absolute durability with contemporary design. We specialize in providing integrated engineering and architectural solutions for the stainless steel, interior design, and air conditioning sectors. We adhere to the highest international quality standards, using the finest stainless steel (304 and 316) in precise thicknesses, with an expert team that guarantees execution from design to final installation, backed by a three-year warranty. Our vision is to be your premier partner in transforming spaces into more luxurious and secure work and living environments."
+    },
+    "map": {
+      "title": "Where To Find Us",
+      "address": "Al jurf - industrial area - 2 - Ajman"
+    }
+  },
+  "steel": {
+    "title": "STEEL SETUP",
+    "body": "Stainless steel work is at the heart of our expertise. We offer innovative solutions that combine structural strength with aesthetic design. Our services include interior decoration (wall cladding, metal ceilings, CNC partitions, and reception counters), exterior work (facades, awnings, stair railings, and balcony railings), as well as security and sliding doors, and stainless steel kitchen fittings and cabinets. Every piece we manufacture undergoes meticulous detailing, laser cutting, and expert welding to ensure a flawless finish.",
+    "contactTeam": "Contact Steel team"
+  },
+  "decor": {
+    "title": "DECOR SETUP",
+    "body": "\"At 'Sana Steel Design', we believe that decor is the language of a space, so we specialize in providing comprehensive decor work that combines innovation and professionalism. Whether you are looking to renovate your office or design your residential space, our team ensures that you integrate metallic materials with sophisticated decorative touches that give the space a unique, modern character. From art partitions to ceilings and wall finishes, we pay attention to the smallest details to ensure that your decor reflects a distinctive identity that expresses your refined taste.\"",
+    "contactTeam": "Contact Decor team"
+  },
+  "aircon": {
+    "title": "AIR CONDTIONING SETUP",
+    "body": "Because true comfort is only achieved with an ideal climate, we offer specialized air conditioning services in all aspects. We are committed to supplying, installing, and maintaining air conditioning systems using the latest technologies to ensure efficient cooling, energy savings, and quiet operation. Our technical team possesses the expertise to execute projects that require seamless integration between air conditioning systems and interior design, guaranteeing a harmonious aesthetic and high-quality functionality.",
+    "contactTeam": "Contact air conditioning team"
+  },
+  "contactSana": "Contact Sana Steel Design",
+  "contact": {
+    "title": "Contact Us",
+    "address": "Al jurf - industrial area - 2 - Ajman",
+    "email": "sanasteeldesign@gmail.com",
+    "phone": "0558159040"
+  },
+  "footer": {
+    "rights": "© 2026 SANA STEEL DESIGN Technical Services Work L.L.C. All rights reserved."
+  }
+}

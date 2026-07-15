@@ -10,9 +10,11 @@
     "format": "oxfmt"
   },
   "dependencies": {
+    "i18next": "^26.3.6",
     "pnpm": "^11.10.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-i18next": "^17.0.9"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",

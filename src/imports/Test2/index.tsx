@@ -19,6 +19,9 @@ import steel4 from "./images/gate.jpeg";
 import steel5 from "./images/kitchen.jpeg";
 import steel6 from "./images/more stairs.jpeg";
 import steel7 from "./images/stare bars.jpeg";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../components/LanguageSwitcher";
+import '../../i18n.ts';
 
 function Group4() {
   return (
@@ -86,10 +89,11 @@ function IcBaselineWhatsapp() {
 }
 
 function Frame1() {
+  const { t } = useTranslation();
   return (
     <div className="absolute bg-[#eca821] content-stretch flex gap-[10px] inset-0 items-center justify-center px-[16px] py-[5px] rounded-[24px]">
       <IcBaselineWhatsapp />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">Contact us</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">{t('Contact us')}</p>
     </div>
   );
 }
@@ -108,10 +112,11 @@ function BackGround() {
 }
 
 function Map() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-0 top-[4071px]" data-name="Map">
       <div className="absolute bg-white h-[703px] left-0 top-[4071px] w-[1440px]" />
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[66px] text-[#eca821] text-[48px] top-[4163px] whitespace-nowrap">Where To Find Us</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[66px] text-[#eca821] text-[48px] top-[4163px] whitespace-nowrap">{t('Where To Find Us')}</p>
       <div className="absolute bg-[#FFFFFF00] h-[407px] left-[771px] rounded-[24px] top-[4204px] w-[583px]" />
       <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[711px] top-[4190px]">
               <iframe
@@ -124,20 +129,21 @@ function Map() {
         referrerPolicy="strict-origin-when-cross-origin"
       />
       </p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[105px] text-[32px] text-black top-[4258px] w-[394px]">Al jurf - industrial area - 2 - Ajman</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[105px] text-[32px] text-black top-[4258px] w-[394px]">{t('Al jurf - industrial area - 2 - Ajman')}</p>
     </div>
   );
 }
 
 function Tabs() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[489px] top-[4789px]" data-name="Tabs">
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[490px] text-[#eca821] text-[20px] top-[4789px] whitespace-nowrap">Tabs</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[490px] text-[#eca821] text-[20px] top-[4789px] whitespace-nowrap">{t('Tabs')}</p>
       <div className="absolute bg-white h-[2px] left-[490px] top-[4812px] w-[36px]" />
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[489px] text-[#eca821] text-[20px] top-[4925px] w-[100px]">Contact us</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[490px] text-[#eca821] text-[20px] top-[4895px] w-[66px]">Gallery</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[489px] text-[#eca821] text-[20px] top-[4862px] w-[79px]">Services</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[490px] text-[#eca821] text-[20px] top-[4824px] w-[86px]">About Us</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[489px] text-[#eca821] text-[20px] top-[4925px] w-[100px]">{t('Contact us')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[490px] text-[#eca821] text-[20px] top-[4895px] w-[66px]">{t('Gallery')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[489px] text-[#eca821] text-[20px] top-[4862px] w-[79px]">{t('Services')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[490px] text-[#eca821] text-[20px] top-[4824px] w-[86px]">{t('About Us')}</p>
     </div>
   );
 }
@@ -179,13 +185,14 @@ function IcBaselinePhone() {
 }
 
 function ContactUs() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[847px] top-[4789px]" data-name="Contact Us">
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[847px] text-[#eca821] text-[20px] top-[4789px] w-[103px]">Contact Us</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[847px] text-[#eca821] text-[20px] top-[4789px] w-[103px]">{t('Contact Us')}</p>
       <div className="absolute bg-white h-[2px] left-[847px] top-[4812px] w-[36px]" />
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[865px] text-[#eca821] text-[20px] top-[4899px] w-[113px]">0558159040</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[864px] text-[#eca821] text-[20px] top-[4866px] w-[264px]">sanasteeldesign@gmail.com</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[865px] text-[#eca821] text-[19px] top-[4828px] w-[307px]">Al jurf - industrial area - 2 - Ajman</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[865px] text-[#eca821] text-[20px] top-[4899px] w-[113px]">{t('0558159040')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[864px] text-[#eca821] text-[20px] top-[4866px] w-[264px]">{t('sanasteeldesign@gmail.com')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[865px] text-[#eca821] text-[19px] top-[4828px] w-[307px]">{t('Al jurf - industrial area - 2 - Ajman')}</p>
       <MdiLocation />
       <IcBaselineEmail />
       <IcBaselinePhone />
@@ -194,6 +201,7 @@ function ContactUs() {
 }
 
 function BottomBar() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[-5px] top-[4714px]" data-name="Bottom bar">
       <div className="absolute bg-[#474747] h-[421px] left-[-5px] rounded-[24px] shadow-[0px_-8px_4px_0px_rgba(0,0,0,0.25)] top-[4714px] w-[1445px]" />
@@ -211,25 +219,27 @@ function BottomBar() {
 }
 
 function AboutUs() {
+  const { t } = useTranslation();
   return (
-    <div className="absolute contents left-0 top-[3071px]" data-name="About Us">
+    <div className="absolute contents left-0 top-[3071px]" data-name="aboutUs">
       <div className="absolute bg-[#737373] h-[901px] left-0 top-[3071px] w-[1440px]" />
       <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal h-[634px] leading-[0] left-[calc(50%+284px)] text-[32px] text-center text-white top-[3210px] w-[758px] whitespace-pre-wrap">
-        <p className="leading-[normal] mb-0">Sana Steel Design – Shaping Metal into Art</p>
+        <p className="leading-[normal] mb-0">{t('Sana Steel Design – Shaping Metal into Art')}</p>
         <p className="leading-[normal] mb-0">​</p>
-        <p className="leading-[normal]">{`At Sana Steel Design, we don't just shape metal; we transform it into works of art that combine absolute durability with contemporary design. We specialize in providing integrated engineering and architectural solutions for the stainless steel, interior design, and air conditioning sectors. We adhere to the highest international quality standards, using the finest stainless steel (304 and 316) in precise thicknesses, with an expert team that guarantees execution from design to final installation, backed by a three-year warranty. Our vision is to be your premier partner in transforming spaces into more luxurious and secure work and living environments.`}</p>
+        <p className="leading-[normal]">{t('At Sana Steel Design, we don\'t just shape metal; we transform it into works of art that combine absolute durability with contemporary design. We specialize in providing integrated engineering and architectural solutions for the stainless steel, interior design, and air conditioning sectors. We adhere to the highest international quality standards, using the finest stainless steel (304 and 316) in precise thicknesses, with an expert team that guarantees execution from design to final installation, backed by a three-year warranty. Our vision is to be your premier partner in transforming spaces into more luxurious and secure work and living environments.')}</p>
       </div>
       <div className="absolute h-[493px] left-[42px] rounded-[51px] shadow-[5px_11px_4px_0px_rgba(0,0,0,0.25)] top-[3248px] w-[506px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[51px]">
           <img alt="" className="absolute h-[104.67%] left-[-0.99%] max-w-none top-[-1.42%] w-[101.98%]" src={imgRectangle25} />
         </div>
       </div>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[897px] text-[#eca821] text-[48px] top-[3116px] whitespace-nowrap">About Us</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[897px] text-[#eca821] text-[48px] top-[3116px] whitespace-nowrap">{t("nav.aboutUs")}</p>
     </div>
   );
 }
 
 function IcBaselineWhatsapp1() {
+  const { t } = useTranslation();
   return (
     <div className="relative shrink-0 size-[24px]" data-name="ic:baseline-whatsapp">
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
@@ -242,23 +252,25 @@ function IcBaselineWhatsapp1() {
 }
 
 function Frame2() {
+  const { t } = useTranslation();
   return (
     <div className="absolute bg-[#eca821] content-stretch flex gap-[10px] inset-0 items-center justify-center px-[16px] py-[5px] rounded-[24px]">
       <IcBaselineWhatsapp1 />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">Contact Decor team</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">{t('Contact Decor team')}</p>
     </div>
   );
 }
 
 function DecorSetup() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[85px] top-[2531px]" data-name="Decor Setup">
       <div className="absolute bg-[#d9d9d9] h-[446px] left-[85px] rounded-[24px] shadow-[8px_4px_4px_0px_rgba(0,0,0,0.25)] top-[2595px] w-[1249px]" />
       <div className="absolute h-[38.788px] left-[148px] top-[2640px] w-[168px]" data-name="Heading 4">
-        <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">DECOR SETUP</p>
+        <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">{t('DECOR SETUP')}</p>
       </div>
       <div className="absolute h-[258px] left-[147px] top-[2699px] w-[617px]" data-name="Heading 5">
-        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">{`"At 'Sana Steel Design', we believe that decor is the language of a space, so we specialize in providing comprehensive decor work that combines innovation and professionalism. Whether you are looking to renovate your office or design your residential space, our team ensures that you integrate metallic materials with sophisticated decorative touches that give the space a unique, modern character. From art partitions to ceilings and wall finishes, we pay attention to the smallest details to ensure that your decor reflects a distinctive identity that expresses your refined taste."`}</p>
+        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">{t('"At \'Sana Steel Design\', we believe that decor is the language of a space, so we specialize in providing comprehensive decor work that combines innovation and professionalism. Whether you are looking to renovate your office or design your residential space, our team ensures that you integrate metallic materials with sophisticated decorative touches that give the space a unique, modern character. From art partitions to ceilings and wall finishes, we pay attention to the smallest details to ensure that your decor reflects a distinctive identity that expresses your refined taste."')}</p>
       </div>
       <div className="absolute left-[710px] size-[633px] top-[2419px]" data-name="PHOTO-2026-07-01-21-10-38-3 3">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhoto2026070121103833} />
@@ -271,6 +283,7 @@ function DecorSetup() {
 }
 
 function IcBaselineWhatsapp2() {
+  const { t } = useTranslation();
   return (
     <div className="relative shrink-0 size-[24px]" data-name="ic:baseline-whatsapp">
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
@@ -283,15 +296,17 @@ function IcBaselineWhatsapp2() {
 }
 
 function Frame3() {
+  const { t } = useTranslation();
   return (
     <div className="absolute bg-[#eca821] content-stretch flex gap-[10px] inset-0 items-center justify-center px-[16px] py-[5px] rounded-[24px]">
       <IcBaselineWhatsapp2 />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">Contact Steel team</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">{t('Contact Steel team')}</p>
     </div>
   );
 }
 
 function SteelSetup() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[85px] top-[1410px]" data-name="Steel Setup">
       <div className="absolute bg-[#d9d9d9] h-[400px] left-[85px] rounded-[24px] shadow-[5px_4px_4px_0px_rgba(0,0,0,0.25)] top-[1585px] w-[1261px]" />
@@ -299,10 +314,10 @@ function SteelSetup() {
         <Frame3 />
       </div>
       <div className="absolute h-[38.788px] left-[148px] top-[1635px] w-[168px]" data-name="Heading 3">
-        <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">STEEL SETUP</p>
+        <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">{t('STEEL SETUP')}</p>
       </div>
       <div className="absolute h-[230px] left-[147px] top-[1690px] w-[624px]" data-name="Heading 2">
-        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">Stainless steel work is at the heart of our expertise. We offer innovative solutions that combine structural strength with aesthetic design. Our services include interior decoration (wall cladding, metal ceilings, CNC partitions, and reception counters), exterior work (facades, awnings, stair railings, and balcony railings), as well as security and sliding doors, and stainless steel kitchen fittings and cabinets. Every piece we manufacture undergoes meticulous detailing, laser cutting, and expert welding to ensure a flawless finish.</p>
+        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">{t('Stainless steel work is at the heart of our expertise. We offer innovative solutions that combine structural strength with aesthetic design. Our services include interior decoration (wall cladding, metal ceilings, CNC partitions, and reception counters), exterior work (facades, awnings, stair railings, and balcony railings), as well as security and sliding doors, and stainless steel kitchen fittings and cabinets. Every piece we manufacture undergoes meticulous detailing, laser cutting, and expert welding to ensure a flawless finish.')}</p>
       </div>
       <div className="absolute left-[953px] size-[512px] top-[1531px]" data-name="PHOTO-2026-07-01-21-10-38-2 3">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhoto2026070121103823} />
@@ -312,6 +327,7 @@ function SteelSetup() {
 }
 
 function IcBaselineWhatsapp3() {
+  const { t } = useTranslation();
   return (
     <div className="relative shrink-0 size-[24px]" data-name="ic:baseline-whatsapp">
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
@@ -324,23 +340,25 @@ function IcBaselineWhatsapp3() {
 }
 
 function Frame4() {
+  const { t } = useTranslation();
   return (
     <div className="absolute bg-[#eca821] content-stretch flex gap-[10px] inset-0 items-center justify-center px-[16px] py-[5px] rounded-[24px]">
       <IcBaselineWhatsapp3 />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">Contact air conditioning team</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">{t('Contact air conditioning team')}</p>
     </div>
   );
 }
 
 function AirconSetup() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[85px] top-[1888px]" data-name="AIRCON Setup">
       <div className="absolute bg-[#d9d9d9] h-[421px] left-[85px] rounded-[24px] shadow-[7px_4px_4px_0px_rgba(0,0,0,0.25)] top-[2088px] w-[1261px]" />
       <div className="absolute h-[38.788px] left-[134px] top-[2142px] w-[168px]" data-name="Heading 6">
-        <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">AIR CONDTIONING SETUP</p>
+        <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">{t('AIR CONDITIONING SETUP')}</p>
       </div>
       <div className="absolute h-[224px] left-[147px] top-[2197px] w-[589px]" data-name="Heading 7">
-        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">Because true comfort is only achieved with an ideal climate, we offer specialized air conditioning services in all aspects. We are committed to supplying, installing, and maintaining air conditioning systems using the latest technologies to ensure efficient cooling, energy savings, and quiet operation. Our technical team possesses the expertise to execute projects that require seamless integration between air conditioning systems and interior design, guaranteeing a harmonious aesthetic and high-quality functionality.</p>
+        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">{t('Because true comfort is only achieved with an ideal climate, we offer specialized air conditioning services in all aspects. We are committed to supplying, installing, and maintaining air conditioning systems using the latest technologies to ensure efficient cooling, energy savings, and quiet operation. Our technical team possesses the expertise to execute projects that require seamless integration between air conditioning systems and interior design, guaranteeing a harmonious aesthetic and high-quality functionality.')}</p>
       </div>
       <div className="absolute left-[383px] size-[906px] top-[1888px]" data-name="PHOTO-2026-07-01-21-10-38-5 3">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhoto2026070121103853} />
@@ -353,6 +371,7 @@ function AirconSetup() {
 }
 
 function listImages() {
+  const { t } = useTranslation();
   const images = [imgRectangle12, imgRectangle13, ac2, ac3, ac4, ac5, ac6, steel, steel2, steel3, steel4, steel5, steel6, steel7];
   const imageComponents = [];
   for (const image of images) {
@@ -368,6 +387,7 @@ function listImages() {
 }
 
 function Frame() {
+  const { t } = useTranslation();
   return (
     <div className="absolute content-stretch flex gap-[122px] h-[379px] items-center left-[45px] overflow-x-auto overflow-y-clip top-[1134px] w-[1369px]">
       {listImages()}
@@ -376,6 +396,7 @@ function Frame() {
 }
 
 function Group2() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[45px] top-[1131px]">
       <Frame />
@@ -384,6 +405,7 @@ function Group2() {
 }
 
 function TouchFields() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[68px] top-[97px]" data-name="Touch Fields">
       <div className="absolute bg-[rgba(217,217,217,0)] h-[72px] left-[144px] top-[97px] w-[204px]" />
@@ -395,17 +417,19 @@ function TouchFields() {
 }
 
 function Pictures() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[-9px] top-[97px]" data-name="Pictures">
       <div className="absolute bg-[#737373] h-[477px] left-[-9px] top-[1061px] w-[1462px]" />
       <Group2 />
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[38.882px] leading-[normal] left-[45px] text-[48px] text-black top-[1069.33px] w-[196px]">Pictures</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[38.882px] leading-[normal] left-[45px] text-[48px] text-black top-[1069.33px] w-[196px]">{t('Pictures')}</p>
       <TouchFields />
     </div>
   );
 }
 
 function Group() {
+  const { t } = useTranslation();
   return (
     <div className="absolute inset-[3.13%_3.12%_3.12%_3.13%]" data-name="Group">
       <div className="absolute inset-[-3.33%]">
@@ -420,15 +444,9 @@ function Group() {
   );
 }
 
-function StreamlineUltimateFactoryIndustrialRobotArm() {
-  return (
-    <div className="absolute left-[1469px] overflow-clip size-[24px] top-[769px]" data-name="streamline-ultimate:factory-industrial-robot-arm-1">
-      <Group />
-    </div>
-  );
-}
 
 function Group5() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[-36px] top-[50px] width">
       <div className="absolute bg-[#423e3e] h-[146px] left-0 rounded-[16px] top-[647px] w-[612px]" />
@@ -447,12 +465,12 @@ function Group5() {
           <div className="h-[237.92px] relative rounded-[24px] w-[403.958px]" style={{ backgroundImage: "linear-gradient(-25.7332deg, rgb(210, 185, 47) 3.5506%, rgb(141, 127, 47) 23.08%, rgb(251, 251, 251) 41.838%, rgb(255, 242, 169) 58.966%, rgb(188, 136, 13) 96.344%)" }} />
         </div>
       </div>
-      <StreamlineUltimateFactoryIndustrialRobotArm />
     </div>
   );
 }
 
 function Group6() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[-19px] top-[731px] inset-0 rounded-[inherit] shadow-[inset_0px_9px_4px_0px_rgba(0,0,0,0.25),inset_0px_-12px_8px_0px_rgba(255,255,255,0.15)]">
       <div className="absolute flex h-[330.081px] items-center justify-center left-[553.75px] top-[731px] w-[404.344px]">
@@ -485,10 +503,11 @@ function IcBaselineWhatsapp4() {
 }
 
 function Frame5() {
+  const { t } = useTranslation();
   return (
     <div className="absolute bg-[#eca821] content-stretch flex gap-[10px] inset-0 items-center justify-center px-[16px] py-[5px] rounded-[24px]">
       <IcBaselineWhatsapp4 />
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">Contact us</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Raleway:Black',sans-serif] font-black leading-[normal] min-w-px relative text-[20px] text-black">{t('Contact us')}</p>
     </div>
   );
 }
@@ -563,12 +582,13 @@ function LsiconShieldOutline() {
 }
 
 function Features() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[10px] top-[678px]" data-name="Features">
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[49px] text-[#eca821] text-[12px] top-[688px] w-[86px]">ENGINEERING</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[208px] text-[#eca821] text-[12px] top-[683px] w-[86px]">STEEL FABRICATION</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[369px] text-[#eca821] text-[12px] top-[683px] w-[86px]">PRECISION INSTALLATION</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[522px] text-[#eca821] text-[12px] top-[683px] w-[86px]">QUALITY ASSURANCE</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[49px] text-[#eca821] text-[12px] top-[688px] w-[86px]">{t('ENGINEERING')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[208px] text-[#eca821] text-[12px] top-[683px] w-[86px]">{t('STEEL FABRICATION')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[369px] text-[#eca821] text-[12px] top-[683px] w-[86px]">{t('PRECISION INSTALLATION')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[522px] text-[#eca821] text-[12px] top-[683px] w-[86px]">{t('QUALITY ASSURANCE')}</p>
       <div className="absolute left-[160px] size-[36px] top-[679px]">
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 36 36">
           <circle cx="18" cy="18" id="Ellipse 6" r="17.5" stroke="var(--stroke-0, #ECA821)" />
@@ -624,24 +644,26 @@ function HeroSection() {
 }
 
 function Frame6() {
+  const { t } = useTranslation();
   return (
     <div className="absolute bg-[#eca821] content-stretch flex inset-0 items-center justify-center px-[16px] py-[5px] rounded-[24px]">
-      <p className="[word-break:break-word] font-['Raleway:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[20px] text-black whitespace-nowrap">INQUIRE</p>
+      <p className="[word-break:break-word] font-['Raleway:Black',sans-serif] font-black leading-[normal] relative shrink-0 text-[20px] text-black whitespace-nowrap">{t('INQUIRE')}</p>
     </div>
   );
 }
 
 function MenuBar() {
+  const { t } = useTranslation();
   return (
     <div className="absolute contents left-[-4px] top-0" data-name="Menu Bar">
       <div className="absolute bg-[#737373] h-[81px] left-[-4px] top-0 w-[1444px]" />
       <div className="absolute h-[33px] left-[1306px] top-[22px] w-[119px]">
         <Frame6 />
       </div>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1166px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">Contact us</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1060px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">Gallery</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[938px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">Services</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[816px] text-[#eca821] text-[20px] top-[29px] whitespace-nowrap">About Us</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1166px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">{t('Contact us')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1060px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">{t('Gallery')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[938px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">{t('Services')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[816px] text-[#eca821] text-[20px] top-[29px] whitespace-nowrap">{t('About Us')}</p>
 
       <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[10px] text-[20px] top-[27px] whitespace-nowrap bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, rgb(251, 202, 108) 20.192%, rgb(233, 222, 202) 47.596%, rgb(152, 112, 32) 69.712%, rgb(192, 167, 117) 92.308%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
         SANA STEEL DESIGN
@@ -663,6 +685,7 @@ function IcRoundHome() {
 }
 
 export default function Test() {
+  const { t } = useTranslation();
   return (
     <div className="bg-white relative size-full" data-name="Test 2">
       <BackGround />
@@ -677,12 +700,13 @@ export default function Test() {
       <MenuBar />
       <div className="absolute drop-shadow-[7px_7px_2px_rgba(0,0,0,0.25)] h-[72px] left-[70px] overflow-clip rounded-[24px] top-[97px] w-[1254px]" data-name="Options">
         <div className="absolute bg-[#d9d9d9] inset-0 rounded-[24px]" />
-        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[7.97%] right-[84.77%] text-[30px] text-black top-[26.39%] whitespace-nowrap">STEEL</p>
-        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[45.93%] right-[45.85%] text-[30px] text-black top-[26.39%] whitespace-nowrap">DECOR</p>
-        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[86.76%] right-[3.43%] text-[30px] text-black top-[26.39%] whitespace-nowrap">AIR CON</p>
+        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[7.97%] right-[84.77%] text-[30px] text-black top-[26.39%] whitespace-nowrap">{t('STEEL')}</p>
+        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[45.93%] right-[45.85%] text-[30px] text-black top-[26.39%] whitespace-nowrap">{t('DECOR')}</p>
+        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[86.76%] right-[3.43%] text-[30px] text-black top-[26.39%] whitespace-nowrap">{t('AIR CON')}</p>
         <div className="absolute bg-[#b7b7b7] h-[72px] left-0 rounded-[24px] top-0 w-[70px]" />
         <IcRoundHome />
       </div>
+      <LanguageSwitcher />
     </div>
   );
 }
