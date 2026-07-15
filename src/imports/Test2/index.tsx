@@ -7,7 +7,6 @@ import imgRectangle12 from "./a118b4d8010f502c19b42ec411507f032f86a7b0.png";
 import imgRectangle13 from "./b585cf7b17856716cb2cb951ff250787f0ad139b.png";
 import imgFullHouse from "./1cad5618ff1fc00e3465b3ebba0e5e154bd1d3aa.png";
 import imgRectangle10 from "./adf8f90e47bc3a5dd15095d73d9c7adf00038e1f.png";
-import ac from "./images/ac maybe.jpeg";
 import ac2 from "./images/ac unit.jpeg";
 import ac3 from "./images/clean ac.jpeg";
 import ac4 from "./images/fan.jpeg";
@@ -354,7 +353,7 @@ function AirconSetup() {
 }
 
 function listImages() {
-  const images = [imgRectangle12, imgRectangle13, ac, ac2, ac3, ac4, ac5, ac6, steel, steel2, steel3, steel4, steel5, steel6, steel7];
+  const images = [imgRectangle12, imgRectangle13, ac2, ac3, ac4, ac5, ac6, steel, steel2, steel3, steel4, steel5, steel6, steel7];
   const imageComponents = [];
   for (const image of images) {
     imageComponents.push(
@@ -370,7 +369,7 @@ function listImages() {
 
 function Frame() {
   return (
-    <div className="absolute content-stretch flex gap-[122px] h-[346.262px] items-center left-[45px] overflow-x-auto overflow-y-clip top-[1144px] w-[1369px]">
+    <div className="absolute content-stretch flex gap-[122px] h-[379px] items-center left-[45px] overflow-x-auto overflow-y-clip top-[1134px] w-[1369px]">
       {listImages()}
     </div>
   );
@@ -378,7 +377,7 @@ function Frame() {
 
 function Group2() {
   return (
-    <div className="absolute contents left-[45px] top-[1144px]">
+    <div className="absolute contents left-[45px] top-[1131px]">
       <Frame />
     </div>
   );
