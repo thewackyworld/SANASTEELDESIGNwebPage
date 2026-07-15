@@ -253,18 +253,18 @@ function Frame2() {
 
 function DecorSetup() {
   return (
-    <div className="absolute contents left-[85px] top-[1410px]" data-name="Decor Setup">
-      <div className="absolute bg-[#d9d9d9] h-[421px] left-[85px] rounded-[24px] shadow-[8px_4px_4px_0px_rgba(0,0,0,0.25)] top-[1585px] w-[1249px]" />
-      <div className="absolute h-[38.788px] left-[148px] top-[1626px] w-[168px]" data-name="Heading 4">
+    <div className="absolute contents left-[85px] top-[2531px]" data-name="Decor Setup">
+      <div className="absolute bg-[#d9d9d9] h-[446px] left-[85px] rounded-[24px] shadow-[8px_4px_4px_0px_rgba(0,0,0,0.25)] top-[2595px] w-[1249px]" />
+      <div className="absolute h-[38.788px] left-[148px] top-[2640px] w-[168px]" data-name="Heading 4">
         <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">DECOR SETUP</p>
       </div>
-      <div className="absolute h-[258px] left-[147px] top-[1685px] w-[617px]" data-name="Heading 5">
+      <div className="absolute h-[258px] left-[147px] top-[2699px] w-[617px]" data-name="Heading 5">
         <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">{`"At 'Sana Steel Design', we believe that decor is the language of a space, so we specialize in providing comprehensive decor work that combines innovation and professionalism. Whether you are looking to renovate your office or design your residential space, our team ensures that you integrate metallic materials with sophisticated decorative touches that give the space a unique, modern character. From art partitions to ceilings and wall finishes, we pay attention to the smallest details to ensure that your decor reflects a distinctive identity that expresses your refined taste."`}</p>
       </div>
-      <div className="absolute left-[710px] size-[633px] top-[1410px]" data-name="PHOTO-2026-07-01-21-10-38-3 3">
+      <div className="absolute left-[710px] size-[633px] top-[2419px]" data-name="PHOTO-2026-07-01-21-10-38-3 3">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhoto2026070121103833} />
       </div>
-      <div className="absolute drop-shadow-[5px_6px_2px_rgba(0,0,0,0.25)] h-[38px] left-[143px] top-[1951px] w-[265px]">
+      <div className="absolute drop-shadow-[5px_6px_2px_rgba(0,0,0,0.25)] h-[38px] left-[143px] top-[2969px] w-[265px]">
         <Frame2 />
       </div>
     </div>
@@ -294,18 +294,18 @@ function Frame3() {
 
 function SteelSetup() {
   return (
-    <div className="absolute contents left-[85px] top-[2531px]" data-name="Steel Setup">
-      <div className="absolute bg-[#d9d9d9] h-[400px] left-[85px] rounded-[24px] shadow-[5px_4px_4px_0px_rgba(0,0,0,0.25)] top-[2595px] w-[1261px]" />
-      <div className="absolute drop-shadow-[5px_6px_2px_rgba(0,0,0,0.25)] h-[39px] left-[134px] top-[2929px] w-[265px]">
+    <div className="absolute contents left-[85px] top-[1410px]" data-name="Steel Setup">
+      <div className="absolute bg-[#d9d9d9] h-[400px] left-[85px] rounded-[24px] shadow-[5px_4px_4px_0px_rgba(0,0,0,0.25)] top-[1585px] w-[1261px]" />
+      <div className="absolute drop-shadow-[5px_6px_2px_rgba(0,0,0,0.25)] h-[39px] left-[134px] top-[1926px] w-[265px]">
         <Frame3 />
       </div>
-      <div className="absolute h-[38.788px] left-[148px] top-[2640px] w-[168px]" data-name="Heading 3">
+      <div className="absolute h-[38.788px] left-[148px] top-[1635px] w-[168px]" data-name="Heading 3">
         <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">STEEL SETUP</p>
       </div>
-      <div className="absolute h-[230px] left-[147px] top-[2699px] w-[624px]" data-name="Heading 2">
+      <div className="absolute h-[230px] left-[147px] top-[1690px] w-[624px]" data-name="Heading 2">
         <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">Stainless steel work is at the heart of our expertise. We offer innovative solutions that combine structural strength with aesthetic design. Our services include interior decoration (wall cladding, metal ceilings, CNC partitions, and reception counters), exterior work (facades, awnings, stair railings, and balcony railings), as well as security and sliding doors, and stainless steel kitchen fittings and cabinets. Every piece we manufacture undergoes meticulous detailing, laser cutting, and expert welding to ensure a flawless finish.</p>
       </div>
-      <div className="absolute left-[953px] size-[512px] top-[2531px]" data-name="PHOTO-2026-07-01-21-10-38-2 3">
+      <div className="absolute left-[953px] size-[512px] top-[1531px]" data-name="PHOTO-2026-07-01-21-10-38-2 3">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhoto2026070121103823} />
       </div>
     </div>
