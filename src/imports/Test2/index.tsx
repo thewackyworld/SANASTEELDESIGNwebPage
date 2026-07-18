@@ -116,7 +116,7 @@ function Map() {
   return (
     <div className="absolute contents left-0 top-[4071px]" data-name="Map">
       <div className="absolute bg-white h-[703px] left-0 top-[4071px] w-[1440px]" />
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[66px] text-[#eca821] text-[48px] top-[4163px] whitespace-nowrap">{t('map.title')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[66px] text-[#eca821] text-[48px] top-[4163px] whitespace-nowrap">{t('home.map.title')}</p>
       <div className="absolute bg-[#FFFFFF00] h-[407px] left-[771px] rounded-[24px] top-[4204px] w-[583px]" />
       <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[711px] top-[4190px]">
               <iframe
@@ -129,7 +129,7 @@ function Map() {
         referrerPolicy="strict-origin-when-cross-origin"
       />
       </p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[105px] text-[32px] text-black top-[4258px] w-[394px]">{t('map.address')}</p>
+      <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal leading-[normal] left-[105px] text-[32px] text-black top-[4258px] w-[394px]">{t('home.map.address')}</p>
     </div>
   );
 }
@@ -350,15 +350,25 @@ function Frame4() {
 }
 
 function AirconSetup() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isAr = i18n.language === 'ar';
   return (
     <div className="absolute contents left-[85px] top-[1888px]" data-name="AIRCON Setup">
       <div className="absolute bg-[#d9d9d9] h-[421px] left-[85px] rounded-[24px] shadow-[7px_4px_4px_0px_rgba(0,0,0,0.25)] top-[2088px] w-[1261px]" />
-      <div className="absolute h-[38.788px] left-[134px] top-[2142px] w-[168px]" data-name="Heading 6">
+      <div className={
+        isAr
+      ? "absolute h-[38.788px] left-[784px] top-[2142px] w-[168px]" 
+      : "absolute h-[38.788px] left-[134px] top-[2142px] w-[168px]"
+    }
+      data-name="Heading 6">
         <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black inset-[0_10.71%_0_0] leading-[normal] text-[30px] text-black whitespace-nowrap">{t('aircon.title')}</p>
       </div>
-      <div className="absolute h-[224px] left-[147px] top-[2197px] w-[589px]" data-name="Heading 7">
-        <p className="[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black">{t('aircon.body')}</p>
+      <div className="absolute h-[224px] left-[147px] top-[2197px] w-[889px]" data-name="Heading 7">
+        <p className= {
+          isAr
+          ?"[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[leading-5] text-[28px] text-black"
+          :"[word-break:break-word] absolute font-['Raleway:Regular',sans-serif] font-normal inset-[0_10.71%_0_0] leading-[normal] text-[20px] text-black"
+      }>{t('aircon.body')}</p>
       </div>
       <div className="absolute left-[383px] size-[906px] top-[1888px]" data-name="PHOTO-2026-07-01-21-10-38-5 3">
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPhoto2026070121103853} />
@@ -417,12 +427,19 @@ function TouchFields() {
 }
 
 function Pictures() {
-  const { t } = useTranslation();
+  const { t, i18n} = useTranslation();
+  const isAr = i18n.language === 'ar';
   return (
     <div className="absolute contents left-[-9px] top-[97px]" data-name="Pictures">
       <div className="absolute bg-[#737373] h-[477px] left-[-9px] top-[1061px] w-[1462px]" />
       <Group2 />
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[38.882px] leading-[normal] left-[45px] text-[48px] text-black top-[1069.33px] w-[196px]">{t('pictures.title')}</p>
+      <p className={
+        isAr
+        ? "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[45px] leading-[normal] left-[1200px] text-[41px] text-black top-[1079.33px] w-[196px]"
+        : "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[38.882px] leading-[normal] left-[45px] text-[48px] text-black top-[1069.33px] w-[196px]"
+      }>
+        {t('pictures.title')}
+        </p>
       <TouchFields />
     </div>
   );
@@ -582,13 +599,32 @@ function LsiconShieldOutline() {
 }
 
 function Features() {
-  const { t } = useTranslation();
+  const { t , i18n} = useTranslation();
+  const isAr = i18n.language === 'ar';
+
   return (
     <div className="absolute contents left-[10px] top-[678px]" data-name="Features">
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[49px] text-[#eca821] text-[12px] top-[688px] w-[86px]">{t('home.features.engineering')}</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[208px] text-[#eca821] text-[12px] top-[683px] w-[86px]">{t('home.features.steelFabrication')}</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[369px] text-[#eca821] text-[12px] top-[683px] w-[86px]">{t('home.features.precisionInstallation')}</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[522px] text-[#eca821] text-[12px] top-[683px] w-[86px]">{t('home.features.qualityAssurance')}</p>
+      <p className={
+      isAr
+      ? "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[59px] text-[#eca821] text-[22px] top-[681px] w-[86px]"
+      :"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[49px] text-[#eca821] text-[12px] top-[688px] w-[86px]"
+      }>
+        {t('home.features.engineering')}</p>
+      <p className={
+      isAr
+      ?"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[208px] text-[#eca821] text-[22px] top-[681px] w-[186px]"
+      :"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[208px] text-[#eca821] text-[12px] top-[683px] w-[86px]"
+      }>{t('home.features.steelFabrication')}</p>
+      <p className={
+      isAr
+      ?"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[369px] text-[#eca821] text-[22px] top-[681px] w-[86px]"
+      :"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[369px] text-[#eca821] text-[12px] top-[683px] w-[86px]"
+      }>{t('home.features.precisionInstallation')}</p>
+      <p className={
+      isAr
+      ?"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black h-[17px] leading-[normal] left-[512px] text-[#eca821] text-[22px] top-[681px] w-[186px]"
+      :"[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[522px] text-[#eca821] text-[12px] top-[683px] w-[86px]"
+      }>{t('home.features.qualityAssurance')}</p>
       <div className="absolute left-[160px] size-[36px] top-[679px]">
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 36 36">
           <circle cx="18" cy="18" id="Ellipse 6" r="17.5" stroke="var(--stroke-0, #ECA821)" />
@@ -654,16 +690,42 @@ function Frame6() {
 
 function MenuBar() {
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const isAr = i18n.language === 'ar';
   return (
     <div className="absolute contents left-[-4px] top-0" data-name="Menu Bar">
       <div className="absolute bg-[#737373] h-[81px] left-[-4px] top-0 w-[1444px]" />
       <div className="absolute h-[33px] left-[1306px] top-[22px] w-[119px]">
         <Frame6 />
       </div>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1166px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">{t('nav.contactUs')}</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1060px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">{t('nav.gallery')}</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[938px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap">{t('nav.services')}</p>
-      <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[816px] text-[#eca821] text-[20px] top-[29px] whitespace-nowrap">{t('nav.aboutUs')}</p>
+      <p className={
+        isAr
+          ? "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1216px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap"
+          : "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1166px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap"
+      }>
+        {t('nav.contactUs')}
+      </p>
+      <p className={
+        isAr
+          ? "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1060px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap"
+          : "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[1060px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap"
+      }>
+        {t('nav.gallery')}
+      </p>
+      <p className={
+        isAr
+          ? "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[938px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap"
+          : "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[938px] text-[#eca821] text-[20px] top-[27px] whitespace-nowrap"
+      }>
+        {t('nav.services')}
+      </p>
+      <p className={
+        isAr
+          ? "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[816px] text-[#eca821] text-[20px] top-[29px] whitespace-nowrap"
+          : "[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[816px] text-[#eca821] text-[20px] top-[29px] whitespace-nowrap"
+      }>
+        {t('nav.aboutUs')}
+      </p>
 
       <p className="[word-break:break-word] absolute font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[10px] text-[20px] top-[27px] whitespace-nowrap bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(90deg, rgb(251, 202, 108) 20.192%, rgb(233, 222, 202) 47.596%, rgb(152, 112, 32) 69.712%, rgb(192, 167, 117) 92.308%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
         SANA STEEL DESIGN
@@ -685,7 +747,8 @@ function IcRoundHome() {
 }
 
 export default function Test() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isAr = i18n.language === 'ar';
   return (
     <div className="bg-white relative size-full" data-name="Test 2">
       <BackGround />
@@ -700,9 +763,21 @@ export default function Test() {
       <MenuBar />
       <div className="absolute drop-shadow-[7px_7px_2px_rgba(0,0,0,0.25)] h-[72px] left-[70px] overflow-clip rounded-[24px] top-[97px] w-[1254px]" data-name="Options">
         <div className="absolute bg-[#d9d9d9] inset-0 rounded-[24px]" />
-        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[7.97%] right-[84.77%] text-[30px] text-black top-[26.39%] whitespace-nowrap">{t('optionsTabs.steel')}</p>
-        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[45.93%] right-[45.85%] text-[30px] text-black top-[26.39%] whitespace-nowrap">{t('optionsTabs.decor')}</p>
-        <p className="[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[86.76%] right-[3.43%] text-[30px] text-black top-[26.39%] whitespace-nowrap">{t('optionsTabs.aircon')}</p>
+        <p className={
+        isAr
+        ? "[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[7.97%] right-[84.77%] text-[40px] text-black top-[26.39%] whitespace-nowrap"
+        :"[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[7.97%] right-[84.77%] text-[30px] text-black top-[26.39%] whitespace-nowrap"
+        }>{t('optionsTabs.steel')}</p>
+        <p className={
+        isAr
+        ? "[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[45%] right-[45%] text-[40px] text-black top-[26.39%] whitespace-nowrap"
+        :"[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[45%] right-[45%] text-[30px] text-black top-[26.39%] whitespace-nowrap"
+        }>{t('optionsTabs.decor')}</p>
+        <p className={
+        isAr
+        ? "[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[86.76%] right-[3.43%] text-[40px] text-black top-[26.39%] whitespace-nowrap"
+        :"[word-break:break-word] absolute bottom-1/4 font-['Raleway:Black',sans-serif] font-black leading-[normal] left-[86.76%] right-[3.43%] text-[30px] text-black top-[26.39%] whitespace-nowrap"
+        }>{t('optionsTabs.aircon')}</p>
         <div className="absolute bg-[#b7b7b7] h-[72px] left-0 rounded-[24px] top-0 w-[70px]" />
         <IcRoundHome />
       </div>
